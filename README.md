@@ -1,5 +1,5 @@
 # JsonplaceholderDemoMvvmApp
-*An hunble MVVN showcase App*
+*An humble MVVN showcase App*
 
 ## Introduction
 
@@ -16,11 +16,11 @@ On this repository you will find an iOS App build around the endpoints available
 
 ### Component Architecture
 
-Instead to build abstraction using Classes MVVM enforce the 'Dependency inversion' principle [SOLID](https://en.wikipedia.org/wiki/SOLID), in which dependencies are modeled as protocols, which intances (classes) are injected (passed over inits) at runtime. This is an important for Unit Testing, under which you want to test only the componet unit (its concrete class) but not its dependencies (that can be passed as Mock object during testing)
+Instead to build abstraction using Classes MVVM enforce the 'Dependency inversion' principle [SOLID](https://en.wikipedia.org/wiki/SOLID), in which dependencies are modeled as protocols, which instances (classes) are injected (passed over inits) at runtime. This is an important for Unit Testing, under which you want to test only the component unit (its concrete class) but not its dependencies (that can be passed as Mock object during testing)
 
-### Asyn processsing and callbacks 
+### Asyn processing and callbacks 
 
-The low level layers of the Architecture ( Services, Repositories ) are intented for Async processing, on which the caller doesn't have to wait for the process to continue ( Sync processing ), this is particular important for iOS Apps on which the user doesn't want the UI to be blocked while the App is working. To achieve this Services and Repositories receive a callback (or completon block), which is a function that is called once the requested task completes. 
+The low level layers of the Architecture ( Services, Repositories ) are intended for Async processing, on which the caller doesn't have to wait for the process to continue ( Sync processing ), this is particular important for iOS Apps on which the user doesn't want the UI to be blocked while the App is working. To achieve this Services and Repositories receive a callback (or completion block), which is a function that is called once the requested task completes. 
 
 ### Services and Repositories 
 
@@ -28,7 +28,7 @@ Data can arrive from external sources (Web services is the primal example) and f
 
 ### Observer pattern 
 
-To decouple Controllers and their ViewModels a Observer pattern was used. Controllers only need to observe (or bind) to the properties of the ViewModel they are interested into.
+To decouple Controllers and their ViewModels an Observer pattern was used. Controllers only need to observe (or bind) to the properties of the ViewModel they are interested into.
 
 ## Service components 
 
@@ -67,7 +67,7 @@ This compont abstract CRUD operation over Core Data. As the JSONPlaceholderServi
 
 ## Use Cases 
 
-Services and Repositories are not intended for direct use from the ViewModel. From this layer you reference Used Cases componets which abstract Biz logic units. Each use case handle one biz rule at a time (SOLID's Single-responsibility principle), so these components only have *one method* , which is usually named *execute*, for example:
+Services and Repositories are not intended for direct use from the ViewModel. From this layer you reference Used Cases components which abstract Biz logic units. Each use case handle one biz rule at a time (SOLID's Single-responsibility principle), so these components only have *one method* , which is usually named *execute*, for example:
 
 ```
 protocol LoadPostsUseCase {
@@ -90,9 +90,9 @@ As was explained, controllers can only reference view models. Controllers can re
 
 ## Unit Testing
 
-MVVM can be a pain due to its high level of decoupling, but it pays back when it comes to Unit testing. It's easy to test components on isolation, and the only thing you need to do is to pass over component's dependencies. If you check the unit testing for this proyect you will see how easy ws to test the Services (Using a stub to pass fake responses) and respositories (handling a Core data instance in memory)
+MVVM can be a pain due to its high level of decoupling, but it pays back when it comes to Unit testing. It's easy to test components on isolation, and the only thing you need to do is to pass over component's dependencies. If you check the unit testing for this project you will see how easy ws to test the Services (Using a stub to pass fake responses) and repositories (handling a Core data instance in memory)
 
 ## TODO
 
-Probably the bigest improvement this App can have would be to replace the completion/observer pattern for a reactive one. Applying something like RxSwift can solve the messy code handling different dependant asyn responses on some Use cases (like LoadAdditionalPostDataUseCase). Combine would be even better since is already integrated into Swift.
+Probably the biggest improvement this App can have would be to replace the completion/observer pattern for a reactive one. Applying something like RxSwift can solve the messy code handling different dependent asyn responses on some Use cases (like LoadAdditionalPostDataUseCase). Combine would be even better since is already integrated into Swift.
 
