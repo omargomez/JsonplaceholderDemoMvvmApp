@@ -1,0 +1,695 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F913122D24C3583D006891EA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F913122C24C3583D006891EA /* AppDelegate.swift */; };
+		F913122F24C3583D006891EA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F913122E24C3583D006891EA /* SceneDelegate.swift */; };
+		F913123124C3583D006891EA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F913123024C3583D006891EA /* ViewController.swift */; };
+		F913123424C3583D006891EA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F913123224C3583D006891EA /* Main.storyboard */; };
+		F913123724C3583D006891EA /* ZemogaTestApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F913123524C3583D006891EA /* ZemogaTestApp.xcdatamodeld */; };
+		F913123924C3583E006891EA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F913123824C3583E006891EA /* Assets.xcassets */; };
+		F913123C24C3583E006891EA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F913123A24C3583E006891EA /* LaunchScreen.storyboard */; };
+		F913124724C3583F006891EA /* ZemogaTestAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F913124624C3583F006891EA /* ZemogaTestAppTests.swift */; };
+		F913125324C35872006891EA /* LoadPostsUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = F913125224C35872006891EA /* LoadPostsUseCase.swift */; };
+		F913125724C3599B006891EA /* Endpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = F913125624C3599B006891EA /* Endpoints.swift */; };
+		F913125B24C35A8E006891EA /* PostItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = F913125A24C35A8E006891EA /* PostItem.swift */; };
+		F913125E24C35BFB006891EA /* URLSession+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F913125D24C35BFB006891EA /* URLSession+Extensions.swift */; };
+		F913126024C35E09006891EA /* JSONPlaceholderService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F913125F24C35E09006891EA /* JSONPlaceholderService.swift */; };
+		F913126224C35FC8006891EA /* Posts.swift in Sources */ = {isa = PBXBuildFile; fileRef = F913126124C35FC8006891EA /* Posts.swift */; };
+		F913126424C363D6006891EA /* JSONDummies.swift in Sources */ = {isa = PBXBuildFile; fileRef = F913126324C363D6006891EA /* JSONDummies.swift */; };
+		F913126624C38BBD006891EA /* StubDecodableTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = F913126524C38BBD006891EA /* StubDecodableTask.swift */; };
+		F913126A24C38C56006891EA /* JSONPlaceholderServiceTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F913126924C38C56006891EA /* JSONPlaceholderServiceTest.swift */; };
+		F913126D24C38D90006891EA /* CacheRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = F913126C24C38D90006891EA /* CacheRepository.swift */; };
+		F913127024C392E9006891EA /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = F913126F24C392E9006891EA /* CoreDataStack.swift */; };
+		F913127224C39338006891EA /* MainCoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = F913127124C39338006891EA /* MainCoreDataStack.swift */; };
+		F934863F24C4B8D000E03B5C /* PostListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F934863E24C4B8D000E03B5C /* PostListController.swift */; };
+		F934864124C4BA3400E03B5C /* PostListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F934864024C4BA3400E03B5C /* PostListViewModel.swift */; };
+		F934864324C4E70900E03B5C /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F934864224C4E70900E03B5C /* Observable.swift */; };
+		F934864524C4ED4200E03B5C /* PostItemViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F934864424C4ED4200E03B5C /* PostItemViewCell.swift */; };
+		F934864724C5EF9F00E03B5C /* PostDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F934864624C5EF9F00E03B5C /* PostDetailController.swift */; };
+		F934864924C5F0FA00E03B5C /* PostDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F934864824C5F0FA00E03B5C /* PostDetailViewModel.swift */; };
+		F934864B24C5F54F00E03B5C /* UpdateReadedUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = F934864A24C5F54F00E03B5C /* UpdateReadedUseCase.swift */; };
+		F934864D24C6089000E03B5C /* UpdateStartUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = F934864C24C6089000E03B5C /* UpdateStartUseCase.swift */; };
+		F934864F24C627B700E03B5C /* DeletePostUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = F934864E24C627B700E03B5C /* DeletePostUseCase.swift */; };
+		F934865324C62F7100E03B5C /* PostListViewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F934865224C62F7100E03B5C /* PostListViewModelTest.swift */; };
+		F934865524C63F4800E03B5C /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = F934865424C63F4800E03B5C /* User.swift */; };
+		F934865724C6443A00E03B5C /* Comments.swift in Sources */ = {isa = PBXBuildFile; fileRef = F934865624C6443A00E03B5C /* Comments.swift */; };
+		F934865924C6516800E03B5C /* LoadAdditionalPostDataUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = F934865824C6516800E03B5C /* LoadAdditionalPostDataUseCase.swift */; };
+		F934865B24C68CB100E03B5C /* CommentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F934865A24C68CB000E03B5C /* CommentCell.swift */; };
+		F95F259124C3B2E900821484 /* MockDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = F95F259024C3B2E900821484 /* MockDataStack.swift */; };
+		F95F259324C3B37600821484 /* CacheRepositoryTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F95F259224C3B37600821484 /* CacheRepositoryTest.swift */; };
+		F95F259524C4AF0300821484 /* LoadPostsUseCaseTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F95F259424C4AF0300821484 /* LoadPostsUseCaseTest.swift */; };
+		F97DC74524C6937A00177DA3 /* DeleteAllUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = F97DC74424C6937900177DA3 /* DeleteAllUseCase.swift */; };
+		F97DC74724C6A0DB00177DA3 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F97DC74624C6A0DB00177DA3 /* UIViewController+Extension.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F913124324C3583F006891EA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F913122124C3583D006891EA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F913122824C3583D006891EA;
+			remoteInfo = ZemogaTestApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F913122924C3583D006891EA /* ZemogaTestApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZemogaTestApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F913122C24C3583D006891EA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F913122E24C3583D006891EA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		F913123024C3583D006891EA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F913123324C3583D006891EA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F913123624C3583D006891EA /* ZemogaTestApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ZemogaTestApp.xcdatamodel; sourceTree = "<group>"; };
+		F913123824C3583E006891EA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F913123B24C3583E006891EA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F913123D24C3583E006891EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F913124224C3583F006891EA /* ZemogaTestAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZemogaTestAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F913124624C3583F006891EA /* ZemogaTestAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZemogaTestAppTests.swift; sourceTree = "<group>"; };
+		F913124824C3583F006891EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F913125224C35872006891EA /* LoadPostsUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadPostsUseCase.swift; sourceTree = "<group>"; };
+		F913125624C3599B006891EA /* Endpoints.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Endpoints.swift; sourceTree = "<group>"; };
+		F913125A24C35A8E006891EA /* PostItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostItem.swift; sourceTree = "<group>"; };
+		F913125D24C35BFB006891EA /* URLSession+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "URLSession+Extensions.swift"; sourceTree = "<group>"; };
+		F913125F24C35E09006891EA /* JSONPlaceholderService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONPlaceholderService.swift; sourceTree = "<group>"; };
+		F913126124C35FC8006891EA /* Posts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Posts.swift; sourceTree = "<group>"; };
+		F913126324C363D6006891EA /* JSONDummies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONDummies.swift; sourceTree = "<group>"; };
+		F913126524C38BBD006891EA /* StubDecodableTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StubDecodableTask.swift; sourceTree = "<group>"; };
+		F913126924C38C56006891EA /* JSONPlaceholderServiceTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONPlaceholderServiceTest.swift; sourceTree = "<group>"; };
+		F913126C24C38D90006891EA /* CacheRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacheRepository.swift; sourceTree = "<group>"; };
+		F913126F24C392E9006891EA /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
+		F913127124C39338006891EA /* MainCoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoreDataStack.swift; sourceTree = "<group>"; };
+		F934863E24C4B8D000E03B5C /* PostListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostListController.swift; sourceTree = "<group>"; };
+		F934864024C4BA3400E03B5C /* PostListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostListViewModel.swift; sourceTree = "<group>"; };
+		F934864224C4E70900E03B5C /* Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observable.swift; sourceTree = "<group>"; };
+		F934864424C4ED4200E03B5C /* PostItemViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostItemViewCell.swift; sourceTree = "<group>"; };
+		F934864624C5EF9F00E03B5C /* PostDetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDetailController.swift; sourceTree = "<group>"; };
+		F934864824C5F0FA00E03B5C /* PostDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDetailViewModel.swift; sourceTree = "<group>"; };
+		F934864A24C5F54F00E03B5C /* UpdateReadedUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateReadedUseCase.swift; sourceTree = "<group>"; };
+		F934864C24C6089000E03B5C /* UpdateStartUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateStartUseCase.swift; sourceTree = "<group>"; };
+		F934864E24C627B700E03B5C /* DeletePostUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeletePostUseCase.swift; sourceTree = "<group>"; };
+		F934865224C62F7100E03B5C /* PostListViewModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostListViewModelTest.swift; sourceTree = "<group>"; };
+		F934865424C63F4800E03B5C /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		F934865624C6443A00E03B5C /* Comments.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comments.swift; sourceTree = "<group>"; };
+		F934865824C6516800E03B5C /* LoadAdditionalPostDataUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadAdditionalPostDataUseCase.swift; sourceTree = "<group>"; };
+		F934865A24C68CB000E03B5C /* CommentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentCell.swift; sourceTree = "<group>"; };
+		F95F259024C3B2E900821484 /* MockDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockDataStack.swift; sourceTree = "<group>"; };
+		F95F259224C3B37600821484 /* CacheRepositoryTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacheRepositoryTest.swift; sourceTree = "<group>"; };
+		F95F259424C4AF0300821484 /* LoadPostsUseCaseTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadPostsUseCaseTest.swift; sourceTree = "<group>"; };
+		F97DC74424C6937900177DA3 /* DeleteAllUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteAllUseCase.swift; sourceTree = "<group>"; };
+		F97DC74624C6A0DB00177DA3 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F913122624C3583D006891EA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F913123F24C3583F006891EA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F913122024C3583D006891EA = {
+			isa = PBXGroup;
+			children = (
+				F913122B24C3583D006891EA /* ZemogaTestApp */,
+				F913124524C3583F006891EA /* ZemogaTestAppTests */,
+				F913122A24C3583D006891EA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F913122A24C3583D006891EA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F913122924C3583D006891EA /* ZemogaTestApp.app */,
+				F913124224C3583F006891EA /* ZemogaTestAppTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F913122B24C3583D006891EA /* ZemogaTestApp */ = {
+			isa = PBXGroup;
+			children = (
+				F913125C24C35BE5006891EA /* Util */,
+				F934863B24C4B84C00E03B5C /* Infrastructure */,
+				F934863A24C4B82F00E03B5C /* Model */,
+				F934863C24C4B88500E03B5C /* View */,
+				F934863D24C4B88F00E03B5C /* ViewModel */,
+				F913122C24C3583D006891EA /* AppDelegate.swift */,
+				F913122E24C3583D006891EA /* SceneDelegate.swift */,
+				F913123024C3583D006891EA /* ViewController.swift */,
+				F913123224C3583D006891EA /* Main.storyboard */,
+				F913123824C3583E006891EA /* Assets.xcassets */,
+				F913123A24C3583E006891EA /* LaunchScreen.storyboard */,
+				F913123D24C3583E006891EA /* Info.plist */,
+				F913123524C3583D006891EA /* ZemogaTestApp.xcdatamodeld */,
+			);
+			path = ZemogaTestApp;
+			sourceTree = "<group>";
+		};
+		F913124524C3583F006891EA /* ZemogaTestAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				F913124624C3583F006891EA /* ZemogaTestAppTests.swift */,
+				F913124824C3583F006891EA /* Info.plist */,
+				F913126324C363D6006891EA /* JSONDummies.swift */,
+				F913126524C38BBD006891EA /* StubDecodableTask.swift */,
+				F913126924C38C56006891EA /* JSONPlaceholderServiceTest.swift */,
+				F95F259024C3B2E900821484 /* MockDataStack.swift */,
+				F95F259224C3B37600821484 /* CacheRepositoryTest.swift */,
+				F95F259424C4AF0300821484 /* LoadPostsUseCaseTest.swift */,
+				F934865224C62F7100E03B5C /* PostListViewModelTest.swift */,
+			);
+			path = ZemogaTestAppTests;
+			sourceTree = "<group>";
+		};
+		F913125124C3584D006891EA /* UseCases */ = {
+			isa = PBXGroup;
+			children = (
+				F913125224C35872006891EA /* LoadPostsUseCase.swift */,
+				F934864A24C5F54F00E03B5C /* UpdateReadedUseCase.swift */,
+				F934864C24C6089000E03B5C /* UpdateStartUseCase.swift */,
+				F934864E24C627B700E03B5C /* DeletePostUseCase.swift */,
+				F934865824C6516800E03B5C /* LoadAdditionalPostDataUseCase.swift */,
+				F97DC74424C6937900177DA3 /* DeleteAllUseCase.swift */,
+			);
+			path = UseCases;
+			sourceTree = "<group>";
+		};
+		F913125424C35906006891EA /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				F913125F24C35E09006891EA /* JSONPlaceholderService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		F913125524C35991006891EA /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				F913125624C3599B006891EA /* Endpoints.swift */,
+				F913125A24C35A8E006891EA /* PostItem.swift */,
+				F913126124C35FC8006891EA /* Posts.swift */,
+				F934865424C63F4800E03B5C /* User.swift */,
+				F934865624C6443A00E03B5C /* Comments.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		F913125C24C35BE5006891EA /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				F97DC74624C6A0DB00177DA3 /* UIViewController+Extension.swift */,
+				F913125D24C35BFB006891EA /* URLSession+Extensions.swift */,
+				F934864224C4E70900E03B5C /* Observable.swift */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		F913126B24C38D6B006891EA /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				F913126C24C38D90006891EA /* CacheRepository.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		F913126E24C392C5006891EA /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				F913126F24C392E9006891EA /* CoreDataStack.swift */,
+				F913127124C39338006891EA /* MainCoreDataStack.swift */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		F934863A24C4B82F00E03B5C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F913125124C3584D006891EA /* UseCases */,
+				F913125424C35906006891EA /* Services */,
+				F913126B24C38D6B006891EA /* Repositories */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F934863B24C4B84C00E03B5C /* Infrastructure */ = {
+			isa = PBXGroup;
+			children = (
+				F913125524C35991006891EA /* Network */,
+				F913126E24C392C5006891EA /* CoreData */,
+			);
+			path = Infrastructure;
+			sourceTree = "<group>";
+		};
+		F934863C24C4B88500E03B5C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F934863E24C4B8D000E03B5C /* PostListController.swift */,
+				F934864424C4ED4200E03B5C /* PostItemViewCell.swift */,
+				F934864624C5EF9F00E03B5C /* PostDetailController.swift */,
+				F934865A24C68CB000E03B5C /* CommentCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F934863D24C4B88F00E03B5C /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				F934864024C4BA3400E03B5C /* PostListViewModel.swift */,
+				F934864824C5F0FA00E03B5C /* PostDetailViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F913122824C3583D006891EA /* ZemogaTestApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F913124B24C3583F006891EA /* Build configuration list for PBXNativeTarget "ZemogaTestApp" */;
+			buildPhases = (
+				F913122524C3583D006891EA /* Sources */,
+				F913122624C3583D006891EA /* Frameworks */,
+				F913122724C3583D006891EA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ZemogaTestApp;
+			productName = ZemogaTestApp;
+			productReference = F913122924C3583D006891EA /* ZemogaTestApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F913124124C3583F006891EA /* ZemogaTestAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F913124E24C3583F006891EA /* Build configuration list for PBXNativeTarget "ZemogaTestAppTests" */;
+			buildPhases = (
+				F913123E24C3583F006891EA /* Sources */,
+				F913123F24C3583F006891EA /* Frameworks */,
+				F913124024C3583F006891EA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F913124424C3583F006891EA /* PBXTargetDependency */,
+			);
+			name = ZemogaTestAppTests;
+			productName = ZemogaTestAppTests;
+			productReference = F913124224C3583F006891EA /* ZemogaTestAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F913122124C3583D006891EA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = "Omar Eduardo Gomez Padilla";
+				TargetAttributes = {
+					F913122824C3583D006891EA = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+					F913124124C3583F006891EA = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = F913122824C3583D006891EA;
+					};
+				};
+			};
+			buildConfigurationList = F913122424C3583D006891EA /* Build configuration list for PBXProject "ZemogaTestApp" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F913122024C3583D006891EA;
+			productRefGroup = F913122A24C3583D006891EA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F913122824C3583D006891EA /* ZemogaTestApp */,
+				F913124124C3583F006891EA /* ZemogaTestAppTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F913122724C3583D006891EA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F913123C24C3583E006891EA /* LaunchScreen.storyboard in Resources */,
+				F913123924C3583E006891EA /* Assets.xcassets in Resources */,
+				F913123424C3583D006891EA /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F913124024C3583F006891EA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F913122524C3583D006891EA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F97DC74524C6937A00177DA3 /* DeleteAllUseCase.swift in Sources */,
+				F934864F24C627B700E03B5C /* DeletePostUseCase.swift in Sources */,
+				F934864324C4E70900E03B5C /* Observable.swift in Sources */,
+				F913125E24C35BFB006891EA /* URLSession+Extensions.swift in Sources */,
+				F97DC74724C6A0DB00177DA3 /* UIViewController+Extension.swift in Sources */,
+				F913125B24C35A8E006891EA /* PostItem.swift in Sources */,
+				F913123124C3583D006891EA /* ViewController.swift in Sources */,
+				F934865924C6516800E03B5C /* LoadAdditionalPostDataUseCase.swift in Sources */,
+				F913127024C392E9006891EA /* CoreDataStack.swift in Sources */,
+				F913122D24C3583D006891EA /* AppDelegate.swift in Sources */,
+				F934863F24C4B8D000E03B5C /* PostListController.swift in Sources */,
+				F934864124C4BA3400E03B5C /* PostListViewModel.swift in Sources */,
+				F913125324C35872006891EA /* LoadPostsUseCase.swift in Sources */,
+				F913127224C39338006891EA /* MainCoreDataStack.swift in Sources */,
+				F913123724C3583D006891EA /* ZemogaTestApp.xcdatamodeld in Sources */,
+				F934865B24C68CB100E03B5C /* CommentCell.swift in Sources */,
+				F913126D24C38D90006891EA /* CacheRepository.swift in Sources */,
+				F934864524C4ED4200E03B5C /* PostItemViewCell.swift in Sources */,
+				F934864B24C5F54F00E03B5C /* UpdateReadedUseCase.swift in Sources */,
+				F913125724C3599B006891EA /* Endpoints.swift in Sources */,
+				F934864924C5F0FA00E03B5C /* PostDetailViewModel.swift in Sources */,
+				F934864D24C6089000E03B5C /* UpdateStartUseCase.swift in Sources */,
+				F934864724C5EF9F00E03B5C /* PostDetailController.swift in Sources */,
+				F913126224C35FC8006891EA /* Posts.swift in Sources */,
+				F913122F24C3583D006891EA /* SceneDelegate.swift in Sources */,
+				F913126024C35E09006891EA /* JSONPlaceholderService.swift in Sources */,
+				F934865524C63F4800E03B5C /* User.swift in Sources */,
+				F934865724C6443A00E03B5C /* Comments.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F913123E24C3583F006891EA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F95F259524C4AF0300821484 /* LoadPostsUseCaseTest.swift in Sources */,
+				F95F259124C3B2E900821484 /* MockDataStack.swift in Sources */,
+				F913126424C363D6006891EA /* JSONDummies.swift in Sources */,
+				F913124724C3583F006891EA /* ZemogaTestAppTests.swift in Sources */,
+				F934865324C62F7100E03B5C /* PostListViewModelTest.swift in Sources */,
+				F913126A24C38C56006891EA /* JSONPlaceholderServiceTest.swift in Sources */,
+				F95F259324C3B37600821484 /* CacheRepositoryTest.swift in Sources */,
+				F913126624C38BBD006891EA /* StubDecodableTask.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F913124424C3583F006891EA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F913122824C3583D006891EA /* ZemogaTestApp */;
+			targetProxy = F913124324C3583F006891EA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F913123224C3583D006891EA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F913123324C3583D006891EA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F913123A24C3583E006891EA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F913123B24C3583E006891EA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F913124924C3583F006891EA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F913124A24C3583F006891EA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F913124C24C3583F006891EA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 87436V65Z6;
+				INFOPLIST_FILE = ZemogaTestApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = org.omargomez.ZemogaTestApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F913124D24C3583F006891EA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 87436V65Z6;
+				INFOPLIST_FILE = ZemogaTestApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = org.omargomez.ZemogaTestApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		F913124F24C3583F006891EA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 87436V65Z6;
+				INFOPLIST_FILE = ZemogaTestAppTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = org.omargomez.ZemogaTestAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ZemogaTestApp.app/ZemogaTestApp";
+			};
+			name = Debug;
+		};
+		F913125024C3583F006891EA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 87436V65Z6;
+				INFOPLIST_FILE = ZemogaTestAppTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = org.omargomez.ZemogaTestAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ZemogaTestApp.app/ZemogaTestApp";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F913122424C3583D006891EA /* Build configuration list for PBXProject "ZemogaTestApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F913124924C3583F006891EA /* Debug */,
+				F913124A24C3583F006891EA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F913124B24C3583F006891EA /* Build configuration list for PBXNativeTarget "ZemogaTestApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F913124C24C3583F006891EA /* Debug */,
+				F913124D24C3583F006891EA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F913124E24C3583F006891EA /* Build configuration list for PBXNativeTarget "ZemogaTestAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F913124F24C3583F006891EA /* Debug */,
+				F913125024C3583F006891EA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		F913123524C3583D006891EA /* ZemogaTestApp.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				F913123624C3583D006891EA /* ZemogaTestApp.xcdatamodel */,
+			);
+			currentVersion = F913123624C3583D006891EA /* ZemogaTestApp.xcdatamodel */;
+			path = ZemogaTestApp.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = F913122124C3583D006891EA /* Project object */;
+}
