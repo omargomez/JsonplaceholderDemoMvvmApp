@@ -1,5 +1,5 @@
 # JsonplaceholderDemoMvvmApp
-*A humble MVVN showcase App*
+*A humble MVVM showcase App*
 
 ## Introduction
 
